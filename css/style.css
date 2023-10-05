@@ -1,0 +1,23 @@
+.btn {
+  border: 2px solid #e3c9b6;
+  background-color: #699196;
+  color: #e3c9b6;
+}
+
+.btn:hover {
+  transition: ease-in-out;
+  background-color: #e3c9b6;
+  color: #699196;
+  border: 2px solid #699196;
+  transition-duration: 0.25s;
+}
+
+.btn:active {
+  background-color: #96745a;
+  color: #b6dfe4;
+  border: 2px solid #b6dfe4;
+}
+
+body {
+  background-color: #e6fcff;
+}
