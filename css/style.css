@@ -20,4 +20,20 @@
 
 body {
   background-color: #e6fcff;
+  color: #96745a;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  transition: ease-in-out;
+  color: #e3c9b6;
+
+  transition-duration: 0.25s;
+}
+
+a:active {
+  color: #96745a;
 }
