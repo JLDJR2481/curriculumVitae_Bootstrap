@@ -37,3 +37,17 @@ a:hover {
 a:active {
   color: #96745a;
 }
+
+.popover {
+  background-color: #e3c9b6 !important;
+}
+.popover-body {
+  color: #699196;
+  font-size: 0.99rem;
+  max-width: fit-content;
+}
+
+#small-text {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
