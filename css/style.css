@@ -18,24 +18,30 @@
   border: 2px solid #b6dfe4;
 }
 
+#academicas,
+#no-academicas {
+  font-size: 25px;
+  margin-top: 10%;
+}
+
 body {
   background-color: #e6fcff;
   color: #96745a;
 }
 
 a {
-  color: black;
+  color: #e3c9b6;
 }
 
 a:hover {
   transition: ease-in-out;
-  color: #e3c9b6;
+  color: #96745a;
 
   transition-duration: 0.25s;
 }
 
 a:active {
-  color: #96745a;
+  color: #b68865;
 }
 
 .popover {
