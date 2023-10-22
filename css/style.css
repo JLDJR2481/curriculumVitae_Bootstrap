@@ -24,6 +24,11 @@
   margin-top: 10%;
 }
 
+#modal-body {
+  background-color: #96745a;
+  color: #e6fcff;
+}
+
 body {
   background-color: #e6fcff;
   color: #96745a;
