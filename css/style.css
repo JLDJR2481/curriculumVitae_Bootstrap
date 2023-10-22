@@ -76,3 +76,31 @@ td:hover a {
   transition: ease-in-out;
   transition-duration: 0.25s;
 }
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #e6fcff;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 1.8rem;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #96745a;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #96745a;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #b68865;
+  transition: ease-in-out;
+  text-decoration: underline;
+  transition-duration: 0.25s;
+}
