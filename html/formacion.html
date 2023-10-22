@@ -59,18 +59,98 @@
         class="container btn-group-lg btn-group-vertical align-items-center d-flex"
       >
         <a
-          href="#academicas.html"
+          href="#"
           class="btn rounded-pill mb-3 col-5"
           id="academicas"
+          data-toggle="modal"
+          data-target="#estudiosAcademicos"
           >Académicas</a
         >
 
         <a
-          href="#noAcademicas.html"
+          href="#"
           class="btn rounded-pill mb-3 col-5"
-          id="no-academicas"
-          >No académicas</a
+          id="academicas"
+          data-toggle="modal"
+          data-target="#estudiosNoAcademicos"
+          >No Académicas</a
         >
+      </div>
+    </div>
+    <div class="modal fade" id="estudiosAcademicos">
+      <div class="modal-dialog modal-lg modal-dialog">
+        <div
+          class="modal-content"
+          style="background-color: #e6fcff; color: #96745a"
+        >
+          <div class="modal-header container-fluid">
+            <h3 class="modal-title container col-11 m-auto p-auto">
+              Estudios académicos
+            </h3>
+            <button
+              type="button"
+              class="close container col-1 m-auto p-auto"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+          <div
+            class="modal-body container-fluid"
+            style="max-height: 150px; overflow-y: auto"
+          >
+            <ul
+              class="list-group text-center"
+              style="font-size: 1.5rem; color: #96745a; font-weight: bold"
+            >
+              <li class="list-group-item">Educación Secundaria Obligatoria</li>
+              <li class="list-group-item">Bachillerato de Ciencias Sociales</li>
+              <li class="list-group-item">
+                Técnico Superior de Desarrollo de Aplicaciones Webs
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="estudiosNoAcademicos">
+      <div class="modal-dialog modal-lg modal-dialog">
+        <div
+          class="modal-content"
+          style="background-color: #e6fcff; color: #96745a"
+        >
+          <div class="modal-header container-fluid">
+            <h3 class="modal-title container col-11 m-auto p-auto">
+              Estudios no académicos
+            </h3>
+            <button
+              type="button"
+              class="close container col-1 m-auto p-auto"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+          <div
+            class="modal-body container-fluid"
+            style="max-height: 150px; overflow-y: auto"
+          >
+            <ul
+              class="list-group text-center"
+              style="font-size: 1.5rem; color: #96745a; font-weight: bold"
+            >
+              <li class="list-group-item">
+                Curso 100 horas de Progamación en PHP
+              </li>
+              <li class="list-group-item">
+                Curso 200 horas de Análisis de Datos
+              </li>
+              <li class="list-group-item">
+                Curso 300 horas de Sistemas Informáticos
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
