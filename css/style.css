@@ -5,11 +5,11 @@
 }
 
 .btn:hover {
-  transition: ease-in-out;
+  transition: ease-out;
   background-color: #e3c9b6;
   color: #699196;
   border: 2px solid #699196;
-  transition-duration: 0.25s;
+  transition-duration: 0.35s;
 }
 
 .btn:active {
@@ -39,10 +39,10 @@ a {
 }
 
 a:hover {
-  transition: ease-in-out;
+  transition: ease-out;
   color: #96745a;
 
-  transition-duration: 0.25s;
+  transition-duration: 0.35s;
 }
 
 a:active {
@@ -73,8 +73,8 @@ td:hover,
 td:hover a {
   background-color: #699196;
   color: #e3c9b6;
-  transition: ease-in-out;
-  transition-duration: 0.25s;
+  transition: ease-out;
+  transition-duration: 0.35s;
 }
 
 ul.breadcrumb {
@@ -100,7 +100,23 @@ ul.breadcrumb li a {
 }
 ul.breadcrumb li a:hover {
   color: #b68865;
-  transition: ease-in-out;
+  transition: ease-out;
   text-decoration: underline;
-  transition-duration: 0.25s;
+  transition-duration: 0.35s;
+}
+
+.btn.active {
+  background-color: #96745a;
+  color: #b6dfe4;
+  border: 2px solid #b6dfe4;
+}
+
+i {
+  color: #699196;
+}
+
+i:hover {
+  color: #b6dfe4;
+  transition: ease-out;
+  transition-duration: 0.35s;
 }

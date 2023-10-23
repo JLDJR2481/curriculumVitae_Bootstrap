@@ -17,9 +17,39 @@
     />
 
     <title>Currículum Vitae: Datos personales</title>
+
     <script>
-      $(document).ready(function () {
-        $('[data-toggle="popover"]').popover();
+      document.addEventListener("DOMContentLoaded", function () {
+        var botones = document.querySelectorAll('a[data-toggle="popover"]');
+
+        document.addEventListener("click", function (event) {
+          if (!event.target.closest('[data-toggle="popover"]')) {
+            botones.forEach(function (boton) {
+              $(boton).popover("hide");
+              boton.classList.remove("active");
+            });
+          }
+        });
+
+        botones.forEach(function (boton) {
+          $(boton).popover({
+            trigger: "focus",
+            html: true,
+          });
+
+          boton.addEventListener("click", function () {
+            botones.forEach(function (b) {
+              if (b !== boton) {
+                $(b).popover("hide");
+                b.classList.remove("active");
+              }
+            });
+
+            $(boton).popover("show");
+
+            boton.classList.add("active");
+          });
+        });
       });
     </script>
   </head>
@@ -127,32 +157,11 @@
         <a
           href="#"
           class="btn rounded-pill mb-3 col-5"
-          data-toggle="modal"
-          data-target="#enlacesRelacionados"
-        >
-          Más información</a
-        >
-      </div>
-    </div>
-    <div class="modal fade" id="enlacesRelacionados">
-      <div class="modal-dialog modal-lg modal-dialog">
-        <div
-          class="modal-content"
-          style="background-color: #e6fcff; color: #96745a"
-        >
-          <div class="modal-header container-fluid">
-            <h3 class="modal-title container col-11 m-auto p-auto">
-              Enlaces Relacionados
-            </h3>
-            <button
-              type="button"
-              class="close container col-1 m-auto p-auto"
-              data-dismiss="modal"
-            >
-              &times;
-            </button>
-          </div>
-          <div class="modal-body container-fluid text-center">
+          data-toggle="popover"
+          data-placement="left"
+          data-html="true"
+          data-animation="true"
+          data-content='<div class="container-fluid text-center">
             <span class="container" style="font-size: 2rem">
               <a href="https://github.com/JLDJR2481" target="_blank"
                 ><i class="bi bi-github container"></i
@@ -165,8 +174,10 @@
                 ><i class="bi bi-linkedin container"></i
               ></a>
             </span>
-          </div>
-        </div>
+          </div>'
+        >
+          Más información</a
+        >
       </div>
     </div>
   </body>
