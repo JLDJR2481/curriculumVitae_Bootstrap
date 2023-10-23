@@ -41,7 +41,6 @@ a {
 a:hover {
   transition: ease-out;
   color: #96745a;
-
   transition-duration: 0.35s;
 }
 
@@ -119,4 +118,21 @@ i:hover {
   color: #b6dfe4;
   transition: ease-out;
   transition-duration: 0.35s;
+}
+
+li.list-group-item {
+  background-color: #e6fcff;
+  border: none;
+}
+a.tooltip-item {
+  color: #b68865;
+  transition: transform 0.5s ease-out;
+  display: inline-block;
+  transition: ease-out 0.5s;
+}
+
+a.tooltip-item:hover {
+  color: #699196;
+  transform: scale(1.5);
+  text-decoration: none;
 }
