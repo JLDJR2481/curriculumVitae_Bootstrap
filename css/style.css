@@ -2,6 +2,8 @@
   border: 2px solid #e3c9b6;
   background-color: #699196;
   color: #e3c9b6;
+  font-size: 0.8rem;
+  height: auto;
 }
 
 .btn:hover {
@@ -18,10 +20,14 @@
   border: 2px solid #b6dfe4;
 }
 
+#header {
+  margin-top: 5%;
+}
+
 #academicas,
-#no-academicas {
-  font-size: 25px;
-  margin-top: 10%;
+#noAcademicas {
+  height: auto;
+  font-size: 0.8rem;
 }
 
 #modal-body {
@@ -50,22 +56,23 @@ a:active {
 
 .popover {
   background-color: #e3c9b6 !important;
+  font-size: 0.5rem;
 }
 .popover-body {
   color: #699196;
-  font-size: 0.99rem;
+  font-size: 0.6rem;
   max-width: fit-content;
-}
-
-#small-text {
-  font-size: 0.7rem;
-  font-weight: 500;
 }
 
 #table1,
 td a {
   background-color: #e3c9b6;
   color: #699196;
+}
+
+thead,
+tr {
+  font-size: 0.6rem;
 }
 
 td:hover,
@@ -86,7 +93,7 @@ ul.breadcrumb {
 
 ul.breadcrumb li {
   display: inline;
-  font-size: 1.8rem;
+  font-size: 0.9rem;
 }
 ul.breadcrumb li + li:before {
   padding: 8px;
@@ -126,13 +133,21 @@ li.list-group-item {
 }
 a.tooltip-item {
   color: #b68865;
-  transition: transform 0.5s ease-out;
+  transition: transform 0.45s ease-out;
   display: inline-block;
-  transition: ease-out 0.5s;
 }
 
 a.tooltip-item:hover {
   color: #699196;
-  transform: scale(1.5);
+  transform: scale(1.4);
   text-decoration: none;
+}
+
+#header-title {
+  font-size: 1.2rem;
+}
+
+.header-icon {
+  display: flex;
+  justify-content: center;
 }
